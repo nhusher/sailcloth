@@ -1,0 +1,12 @@
+
+html {
+    font-family: Helvetica;
+}
+
+rect {
+    box-shadow: 0 0 2px #000;
+    background-color: #fff;
+    fill: #ccc;
+    stroke-width: 1px;
+    stroke: #888;
+}
