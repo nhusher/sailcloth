@@ -28241,7 +28241,7 @@ sailcloth.core.get_weather_data_BANG_ = function(a, b) {
   return c;
 };
 sailcloth.core.app_state = cljs.core.atom.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "daily-forecast", "daily-forecast", 127842942), cljs.core.PersistentVector.EMPTY], null));
-var c__6201__auto___20610 = cljs.core.async.chan.call(null, 1);
+var c__6201__auto___20647 = cljs.core.async.chan.call(null, 1);
 cljs.core.async.impl.dispatch.run.call(null, function(a) {
   return function() {
     var b = function() {
@@ -28307,19 +28307,19 @@ cljs.core.async.impl.dispatch.run.call(null, function(a) {
     }();
     return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, c);
   };
-}(c__6201__auto___20610));
+}(c__6201__auto___20647));
 sailcloth.core.blah = (new cljs.core.Keyword(null, "hourly", "hourly", -1529948525)).cljs$core$IFn$_invoke$arity$1(cljs.core.first.call(null, (new cljs.core.Keyword(null, "daily-forecast", "daily-forecast", 127842942)).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null, sailcloth.core.app_state))));
 sailcloth.core.wind_graph = function wind_graph(b, c) {
-  "undefined" === typeof sailcloth.core.t20616 && (sailcloth.core.t20616 = function(b, c, g, f) {
+  "undefined" === typeof sailcloth.core.t20653 && (sailcloth.core.t20653 = function(b, c, g, f) {
     this.owner = b;
     this.data = c;
     this.wind_graph = g;
-    this.meta20617 = f;
+    this.meta20654 = f;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216;
-  }, sailcloth.core.t20616.cljs$lang$type = !0, sailcloth.core.t20616.cljs$lang$ctorStr = "sailcloth.core/t20616", sailcloth.core.t20616.cljs$lang$ctorPrWriter = function(b, c, g) {
-    return cljs.core._write.call(null, c, "sailcloth.core/t20616");
-  }, sailcloth.core.t20616.prototype.om$core$IRender$ = !0, sailcloth.core.t20616.prototype.om$core$IRender$render$arity$1 = function(b) {
+  }, sailcloth.core.t20653.cljs$lang$type = !0, sailcloth.core.t20653.cljs$lang$ctorStr = "sailcloth.core/t20653", sailcloth.core.t20653.cljs$lang$ctorPrWriter = function(b, c, g) {
+    return cljs.core._write.call(null, c, "sailcloth.core/t20653");
+  }, sailcloth.core.t20653.prototype.om$core$IRender$ = !0, sailcloth.core.t20653.prototype.om$core$IRender$render$arity$1 = function(b) {
     b = 1.1 * cljs.core.apply.call(null, cljs.core.max, 15, cljs.core.map.call(null, new cljs.core.Keyword(null, "windSpeed", "windSpeed", -191726266), this.data));
     return cljs.core.apply.call(null, React.DOM.svg, {preserveAspectRatio:"none", viewBox:clojure.string.join.call(null, " ", new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 0, 240, 100], null)), width:240, height:100}, cljs.core.flatten.call(null, new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.map.call(null, function(b, c, d, h) {
       return function(h, l) {
@@ -28327,36 +28327,35 @@ sailcloth.core.wind_graph = function wind_graph(b, c) {
         return React.DOM.rect({y:c - m, x:d / 24 * l, height:m, width:10});
       };
     }(b, 100, 240, this), this.data, cljs.core.range.call(null))], null)));
-  }, sailcloth.core.t20616.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta20617;
-  }, sailcloth.core.t20616.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-    return new sailcloth.core.t20616(this.owner, this.data, this.wind_graph, c);
-  }, sailcloth.core.__GT_t20616 = function(b, c, g, f) {
-    return new sailcloth.core.t20616(b, c, g, f);
+  }, sailcloth.core.t20653.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta20654;
+  }, sailcloth.core.t20653.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+    return new sailcloth.core.t20653(this.owner, this.data, this.wind_graph, c);
+  }, sailcloth.core.__GT_t20653 = function(b, c, g, f) {
+    return new sailcloth.core.t20653(b, c, g, f);
   });
-  return new sailcloth.core.t20616(c, b, wind_graph, null);
+  return new sailcloth.core.t20653(c, b, wind_graph, null);
 };
 sailcloth.core.wind_array = function wind_array(b, c) {
-  "undefined" === typeof sailcloth.core.t20622 && (sailcloth.core.t20622 = function(b, c, g, f) {
+  "undefined" === typeof sailcloth.core.t20659 && (sailcloth.core.t20659 = function(b, c, g, f) {
     this.owner = b;
     this.data = c;
     this.wind_array = g;
-    this.meta20623 = f;
+    this.meta20660 = f;
     this.cljs$lang$protocol_mask$partition1$ = 0;
     this.cljs$lang$protocol_mask$partition0$ = 393216;
-  }, sailcloth.core.t20622.cljs$lang$type = !0, sailcloth.core.t20622.cljs$lang$ctorStr = "sailcloth.core/t20622", sailcloth.core.t20622.cljs$lang$ctorPrWriter = function(b, c, g) {
-    return cljs.core._write.call(null, c, "sailcloth.core/t20622");
-  }, sailcloth.core.t20622.prototype.om$core$IRender$ = !0, sailcloth.core.t20622.prototype.om$core$IRender$render$arity$1 = function(b) {
-    cljs.core.prn.call(null, this.data);
+  }, sailcloth.core.t20659.cljs$lang$type = !0, sailcloth.core.t20659.cljs$lang$ctorStr = "sailcloth.core/t20659", sailcloth.core.t20659.cljs$lang$ctorPrWriter = function(b, c, g) {
+    return cljs.core._write.call(null, c, "sailcloth.core/t20659");
+  }, sailcloth.core.t20659.prototype.om$core$IRender$ = !0, sailcloth.core.t20659.prototype.om$core$IRender$render$arity$1 = function(b) {
     return om_tools.dom.element.call(null, React.DOM.div, om.core.build_all.call(null, sailcloth.core.wind_graph, cljs.core.map.call(null, new cljs.core.Keyword(null, "hourly", "hourly", -1529948525), cljs.core.rest.call(null, (new cljs.core.Keyword(null, "daily-forecast", "daily-forecast", 127842942)).cljs$core$IFn$_invoke$arity$1(this.data)))), cljs.core.PersistentVector.EMPTY);
-  }, sailcloth.core.t20622.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
-    return this.meta20623;
-  }, sailcloth.core.t20622.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
-    return new sailcloth.core.t20622(this.owner, this.data, this.wind_array, c);
-  }, sailcloth.core.__GT_t20622 = function(b, c, g, f) {
-    return new sailcloth.core.t20622(b, c, g, f);
+  }, sailcloth.core.t20659.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta20660;
+  }, sailcloth.core.t20659.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+    return new sailcloth.core.t20659(this.owner, this.data, this.wind_array, c);
+  }, sailcloth.core.__GT_t20659 = function(b, c, g, f) {
+    return new sailcloth.core.t20659(b, c, g, f);
   });
-  return new sailcloth.core.t20622(c, b, wind_array, null);
+  return new sailcloth.core.t20659(c, b, wind_array, null);
 };
 om.core.root.call(null, sailcloth.core.wind_array, sailcloth.core.app_state, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "target", "target", 253001721), document.getElementById("sailcloth-root")], null));
 sailcloth.components = {};
