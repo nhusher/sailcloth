@@ -5,6 +5,9 @@
             [om-tools.core :refer-macros [defcomponent]]
             [om-tools.dom :as dom :include-macros ]))
 
+(enable-console-print!)
+
+
 (defn get-position! []
   (let [ch (chan)]
     (js/navigator.geolocation.getCurrentPosition
@@ -57,9 +60,8 @@
   (reify
     om/IRender
     (render [_]
-      (dom/div (om/build-all wind-graph (map :hourly data))))))
+      (dom/div (om/build-all wind-graph (map :hourly (rest (:daily-forecast data))))))))
 
 
-(om/root wind-array @app-state { :target (js/document.getElementById "sailcloth-root") })
+(om/root wind-array app-state { :target (js/document.getElementById "sailcloth-root") })
 
-(enable-console-print!)
